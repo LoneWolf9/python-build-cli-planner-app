@@ -17,7 +17,7 @@ class DeadlinedReminder(ABC, Iterable):
         pass
 
 
-class DateReminder(DeadlineReminder):
+class DateReminder(DeadlinedReminder):
 
     def __init__(self, text, date):
         self.date = date.parse(dayfirst=True)
