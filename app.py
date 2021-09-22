@@ -12,7 +12,7 @@ def handle_input():
     elif(choice == "2"):
         print()
         reminder = input("What would you like to be reminded about?: ")
-        date = input("What is this due? ")
+        date = input("When is this due? ")
 
         add_reminder(reminder, date)
         list_reminders()
