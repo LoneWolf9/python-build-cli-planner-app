@@ -9,12 +9,18 @@ class DeadlinedMetaReminder(Iterable, metaclass=ABCMeta):
     @abstractmethod
     def is_due(self):
         pass
+    
+    def __iter__(self):
+        pass
 
 
-class DeadlinedReminder(ABC, Iterable):
+class DeadlinedReminder(Iterable, metaclass=ABC):
 
     @abstractmethod
     def is_due(self):
+        pass
+    
+    def __iter__(self):
         pass
 
 
