@@ -15,7 +15,7 @@ def handle_input():
         reminder = input("What would you like to be reminded about?: ")
         date = input("When is this due?: ")
 
-        add_reminder(reminder, date, EveningReminder())
+        add_reminder(reminder, date, EveningReminder)
         list_reminders()
     else:
         print("Invalid menu option")
