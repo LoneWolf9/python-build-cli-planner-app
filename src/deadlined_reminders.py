@@ -23,6 +23,7 @@ class DeadlinedReminder(Iterable, ABC):
     def __iter__(self):
         pass
 
+    @classmethod
     def __subclasshook__(cls, subclass):
         if cls is not DeadlinedReminder:
             return NotImplemented
