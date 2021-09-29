@@ -15,7 +15,7 @@ def list_reminders():
         print()
 
 
-def add_reminder(text, date, reminder=ReminderClass):
+def add_reminder(text, date, ReminderClass):
     if not issubclass(ReminderClass, DeadlinedReminder):
         TypeError('Invalid Reminder Class')
 
