@@ -33,7 +33,7 @@ class DeadlinedReminder(Iterable, ABC):
         if not all(attr_in_hierarchy(attr) for attr in ('__iter__', 'is_due')):
             return NotImplemented
 
-    return True
+        return True
 
 
 class DateReminder(DeadlinedReminder):
