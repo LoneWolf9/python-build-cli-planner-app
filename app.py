@@ -1,5 +1,5 @@
 from src.database import add_reminder, list_reminders
-from external_reminders import EveningReminder
+from src.external_reminders import EveningReminder
 
 
 def handle_input():
