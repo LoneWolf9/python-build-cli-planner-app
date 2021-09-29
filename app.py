@@ -1,5 +1,4 @@
 from src.database import add_reminder, list_reminders
-from deadlined_reminders import DateReminder
 from external_reminders import EveningReminder
 
 
